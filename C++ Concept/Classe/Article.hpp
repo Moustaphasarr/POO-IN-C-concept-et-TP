@@ -1,4 +1,4 @@
-#ifndef ARTICLE_HPP
+ #ifndef ARTICLE_HPP
 #define ARTICLE_HPP
 #include <string>
 

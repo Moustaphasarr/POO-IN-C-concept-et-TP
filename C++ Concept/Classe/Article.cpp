@@ -11,6 +11,7 @@ Article::Article(int refernce,std::string designation, float prix, int quantite)
 {
 
 }
+
 float Article::CalculerPrixTTC() const
 {
     return m_prix*1.15;

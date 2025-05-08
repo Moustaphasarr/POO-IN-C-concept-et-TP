@@ -13,7 +13,6 @@ int main()
     cout<<"display before object opration "<<endl;
     Habille.afficher();
     TELE.afficher();
-
     cout<<"price or taxe of Habille"<<Habille.CalculerPrixTTC()<<endl;
     cout<<"price of transport "<<Habille.CalculerPrixTransport()<<endl;
     Habille.Retirer(6);
