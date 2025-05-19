@@ -35,14 +35,10 @@ int main()
     H = E * F;
     cout<<"H={E Inter F}=";
     H.affiche();
-
-    cout<<"ajout des element dans I qui etait vide a travers l'operateur <<"<<endl;        
-    I = E << 7<<5<<9<<7<<4<<1;
-    cout<<"I=";
-    I.affiche();
-
+    
     cout<<"suppresion de 1 dans l'ensemble J"<<endl;
-    J = E >> 1;
+    J = E;
+    J.supprimer(1);
     cout<<"J=";
     J.affiche();
 
@@ -52,11 +48,6 @@ int main()
     else
         cout<<"E ne Contient pas 2";
 
-    cout<<"teste si E contient 2 a travers l'operateur % "<<endl;
-    if(E % 2)
-        cout << "E Contient 2"<<endl;
-    else
-        cout<<"E ne Contient pas 2";
 
     cout<<"reunion de E , F , G"<<endl;
     L = E + F + G;

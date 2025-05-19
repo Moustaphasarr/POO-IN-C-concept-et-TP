@@ -20,9 +20,6 @@ class Ensemble
         void supprimer(int x);
         bool contient(int x)const;
         void affiche()const;
-        Ensemble& operator<<(int x);//add x
-        Ensemble& operator>>(int x);//delete x
-        bool operator%(int x )const;// x est il dans E
         Ensemble operator+(const Ensemble& E)const;//Union
         Ensemble operator*(const Ensemble& E)const; // INTERSECT
         void init();

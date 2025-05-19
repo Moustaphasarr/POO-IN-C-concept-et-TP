@@ -103,17 +103,6 @@ void str::afficher()
     std::cout<<"Chaine :"<<m_chaine<<std::endl;
 }
 
-std::ostream& operator<<(std::ostream &sortie,str &S)
-{
-    int i=0;
-    while(i<S.m_longueur)
-    {
-        sortie<<S.m_chaine[i];
-        i++;
-    }
-    return sortie;
-}
-
 std::istream&  operator>>(std::istream &entre , str &S)
 {
     char C[100];

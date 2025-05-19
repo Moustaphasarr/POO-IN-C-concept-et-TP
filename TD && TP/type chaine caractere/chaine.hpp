@@ -16,7 +16,6 @@ class str
         str operator+(str&); // equivalent a strcat
         char& operator[](int i);
         void afficher();
-        friend std::ostream& operator<<(std::ostream &sortie,str &S);// equivalent a cout<<S
         friend std::istream&  operator>>(std::istream &entre , str &); // equivalent a cin>>S
        bool operator>(str&)const;
 

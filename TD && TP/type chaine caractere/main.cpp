@@ -40,14 +40,7 @@ int main()
 
     cout<<"Utilisation de l'operateur d'indexation"<<endl;
     cout<<"2 et 6 du chaine (et la journee) 2="<<C4[2]<<" 8="<<C4[8]<<endl;
-    cout<<"Utilisation de l'operateur d'insertion"<<endl;
-    cout<<"C1="<<C1<<endl;
-    cout<<"C2="<<C2<<endl;
-    cout<<"utilisation de l'operateur d'extraction"<<endl;
-    str C7;
-    cin>>C7;
-    cout<<"C7="<<C7<<endl;
-
+    
 
 
 

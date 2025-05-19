@@ -116,30 +116,19 @@ void Ensemble::affiche()const
         std::cout << "]" << std::endl;
     }
 }
-Ensemble& Ensemble::operator<<(int x)//add x
-{
-    ajouter(x);
-    return *this;
-}
-Ensemble& Ensemble::operator>>(int x)//delete x
-{
-    supprimer(x);
-    return *this;
-}
-bool Ensemble::operator%(int x )const// x est il dans E
-{
-    return contient(x);
-}
+
+
+
 Ensemble Ensemble::operator+(const Ensemble& E)const//Union
 {
     Ensemble result(m_N_Element + E.m_N_Element);
     for(int i=0; i<m_cardinal; i++)
     {
-        result<< m_tab[i];
+        result.ajouter( m_tab[i]);
     }
     for(int i=0; i<E.m_cardinal; i++)
     {
-        result<<E.m_tab[i];
+        result.ajouter( m_tab[i]);
     }
 
     return result;
@@ -150,9 +139,9 @@ Ensemble Ensemble::operator*(const Ensemble& E)const // INTERSECT
     Ensemble result(m_N_Element + E.m_N_Element);
     while(i<m_cardinal)
     {
-        if(E%m_tab[i])
+        if(E.contient( m_tab[i]))
         {
-            result<<m_tab[i];
+            result.ajouter( m_tab[i]);
         }
         i++;
     }
